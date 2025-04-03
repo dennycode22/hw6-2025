@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
 		video.play();
 		video.volume = volume_val.value / 100
 		console.log("Play Video");
-		console.log("The current value is " + video.volume)
+		console.log("The current value is " + video.volume * 100 + "%")
 	}
 
 	pause_button = this.document.querySelector('#pause');
