@@ -10,11 +10,13 @@ window.addEventListener("load", function() {
 
 
 	/* Need to update volume information */
+	var volume_val = this.document.getElementById("slider")
 	play_button = this.document.querySelector('#play');
 	play_button.onclick = function() {
 		video.play();
+		video.volume = volume_val.value / 100
 		console.log("Play Video");
-		console.log("The current valeus is " + video.volume)
+		console.log("The current value is " + video.volume)
 	}
 
 	pause_button = this.document.querySelector('#pause');
