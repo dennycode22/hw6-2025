@@ -70,9 +70,9 @@ window.addEventListener("load", function() {
 	volume_val.addEventListener("change", function() {
 		video.volume = volume_val.value / 100
 		console.log(video.volume)
-		document.querySelector("#volume").innerHTML = video.volume
-		console.log(document.querySelector("#volume").innerHTML)
+		document.querySelector("#volume").innerHTML = video.volume * 100 + "%"
 		console.log(document.getElementById("volume"))
+		console.log(video.volume)
 	})
 
 	old_school = this.document.querySelector('#vintage')
