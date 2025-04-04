@@ -17,6 +17,7 @@ window.addEventListener("load", function() {
 		video.volume = volume_val.value / 100
 		console.log("Play Video");
 		console.log("The current value is " + video.volume * 100 + "%")
+		document.querySelector("#volume").innerHTML = video.volume * 100 + "%"
 	})
 
 	pause_button = this.document.querySelector('#pause');
@@ -68,7 +69,7 @@ window.addEventListener("load", function() {
 		}
 	})
 
-	var volume_val = this.document.getElementById("slider")
+	var volume_val = this.document.querySelector("#slider")
 	volume_val.addEventListener("change", function() {
 		video.volume = volume_val.value / 100
 		console.log(video.volume)
